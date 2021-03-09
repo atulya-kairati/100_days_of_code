@@ -1,0 +1,85 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles %}
+  {{ super() }}
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+ <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title%}
+My Shitty Blog
+{% endblock %}
+
+
+<!--{% include "header.html"%}-->
+
+{% block content %}
+    {% include "nav-bar.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Another Shitty Blog</h1>
+            <span class="subheading">I hate Blogs.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <!--  start of  Content rendered by jinja    -->
+        {% for post in posts: %}
+        <div class="post-preview">
+          <a href="{{ url_for('post_page', _id=post.id) }}">
+            <h2 class="post-title">
+              {{ post.title }}
+            </h2>
+            <h3 class="post-subtitle">
+              {{ post.subtitle }}
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">{{ post.author }}</a>
+            on {{ post.date }}
+            <a href="{{ url_for('delete_func', id=post.id) }}">✘</a>
+
+          </p>
+        </div>
+        <hr>
+        {% endfor %}
+        <!--  start of  Content rendered by jinja    -->
+
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-left" href="{{ url_for('add_func') }}">Add New Post</a>
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+{% endblock %}
+
+

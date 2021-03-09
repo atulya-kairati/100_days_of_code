@@ -1,0 +1,156 @@
+
+body {
+  margin: 0px;
+  text-align: center;
+}
+
+
+hr {
+  border: none;
+  border-top: dotted;
+  border-width: 5px;
+  border-color: #eaf6f6;
+  width: 20%;
+}
+
+h1 {
+  color: #66bfbf;
+  margin: 0px;
+}
+
+.heading {
+  font-family: 'Indie Flower', cursive;
+  color: #66bfbf;
+  margin-top: 80px;
+  padding-bottom: 0;
+  font-size: 3rem;
+}
+
+.subtitle {
+  color: #66bfbf;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+.topic{
+  color: #66bfbf;
+  font-family: 'Neuton', sans-serif;
+}
+
+.title{
+  color: #66bfbf;
+  
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.firstdiv{
+  padding-top: 16px;
+  background-color: #eaf6f6;
+  height: 80vw;
+  align-content: center;
+  position: relative;
+}
+
+.seconddiv{
+  /* background-color: #eaf6f6; */
+}
+
+.thirddiv{
+  background-color: #66bfbf;
+  padding: 16px 0 16px 0;
+}
+
+.sun{
+  border-radius: 100%;
+  position: absolute;
+  width: 30%;
+  top: 50vh;
+  left: 360px;
+}
+
+.cloud1{
+  width: 30%;
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+.cloud2{
+  position: absolute;
+  width: 20%;
+  left: 40px;
+  top: 40px;
+}
+
+.mountain{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.fuck{
+  text-decoration: underline;
+}
+
+.pics {
+  width: 25%;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.dp {
+  width: 50%;
+}
+
+.profile{
+  margin: 100px auto 50px auto;
+  width: 40%;
+}
+
+.footer-link{
+  color: #11999e;
+  margin: 10px;
+}
+
+
+
+.skill-row{
+  width: 80%;
+  margin: 100px auto;
+  text-align: justify;
+  line-height: 2;
+}
+
+.skills {
+  margin-top: 50px;
+}
+
+.contact-me {
+  margin: 50px auto;
+}
+
+
+.btn {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #FFFFFF;
+   font-family: "Mulish", Brush Script MT;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 8px 32px;
+   background-color: #11999E;
+   text-shadow: 1px 1px 8px #000000;
+   border: solid #337FED 0;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}

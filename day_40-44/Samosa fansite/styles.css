@@ -1,0 +1,36 @@
+/* :::::::::::::::: TAG SELECTOR :::::::::::::::: */
+body {
+  background-color: yellow;
+}
+
+h1 {
+  color: red;
+  font-size: 100px;
+}
+
+p {
+  color: red;
+}
+
+img:hover {
+  background-color: white;
+}
+
+/* :::::::::::::::: CLASS SELECTOR :::::::::::::::: */
+
+.samosa {
+  background-color: green;
+}
+
+.saag {
+  background-color: red;
+}
+
+.good {
+  border-radius: 10%;
+}
+/* :::::::::::::::: ID SELECTOR :::::::::::::::: */
+
+#heading {
+  color: brown;
+}

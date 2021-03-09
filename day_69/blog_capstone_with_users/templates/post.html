@@ -1,0 +1,97 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block styles %}
+{{ super() }}
+<!-- Bootstrap core CSS -->
+<link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+<!-- Custom fonts for this template -->
+<link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+      type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+      rel='stylesheet' type='text/css'>
+
+<!-- Custom styles for this template -->
+<link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}
+My Shitty Blog
+{% endblock %}
+
+{% block content %}
+<!-- Navigation -->
+{% include "nav-bar.html" %}
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('{{ post.img_url }}')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="post-heading">
+                    <h1>{{ post.title }}</h1>
+                    <h2 class="subheading">{{ post.subtitle }}</h2>
+                    <span class="meta">Posted by
+              <a href="#">{{ post.author.name }}</a>
+              on {{ post.date }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p>
+                    {{ post.body | safe }}
+                </p>
+                {% if current_user.id == 1 %}
+                    <a class="btn btn-primary float-right" href="{{ url_for('edit_post', id=post.id) }}">Edit Post</a>
+                {% endif %}
+            </div>
+            <br>
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% if logged_in %}
+                    <!--        #Load ckeditor-->
+                    {{ ckeditor.load() }}
+
+                    <!--        Configure the ckeditor to tell it which field in WTForm will need to be a CKEditor.-->
+                    {{ ckeditor.config(name='body') }}
+
+                    <!-- Creating Form -->
+                    {{ wtf.quick_form(form, novalidate=True) }}
+                {% endif %}
+            </div>
+            <br>
+
+            <div class="col-lg-8 col-md-10 mx-auto">
+                {% for comment in comments %}
+                    <div class="row" >
+                        <div class="col-3 mx-auto">
+                            <img src="https://facedetection.com/wp-content/uploads/BioID-Gesture-Face-Detection-Datasets.gif"
+                                 alt="pp", class="profile_img">
+                            <p>{{comment.author.name}}</p>
+                        </div>
+                        <div class="col-9">
+                            {{comment.text | safe}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</article>
+
+
+<!-- Footer -->
+{% include "footer.html" %}
+
+
+{% endblock %}
+
+

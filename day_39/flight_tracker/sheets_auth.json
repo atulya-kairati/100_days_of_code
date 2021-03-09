@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "exercise-tracker-python",
+  "private_key_id": "1b23554619b81f1bec19eb33fd4a4ff5e984e656",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCv4JfnHO3WF8O6\np6IO9dsBHWPuLVbdYxDmxY0KzYtE0QO4NNE3iSewXbGhO6DDWgbWywZE8QZqKQnq\ndJXJ7x4HCulV3ZpO3s4lbf4+1CT4RddlrIm9ftYUk6nxDp5UD8b9SW5aDl5sjCyX\n6EyjORqUtYyWI3ouCLasnSsnfp+Ic6fZK1teNxSxYhJUnaRgosKl/Xzf/BLPFnje\nWt3/ILUjR6AddzUTfPJJm9jKPKpo9vDksWjyt0CQqFAFA5TzWJREHkx6PG3Q9yOX\n5lDo3KgqQvCkk2VdwKDgbZzWNUjBGcd7ro7WAkTCKXfdrrB55CMdPxlsXF0CXqWy\ndY2ZmYAXAgMBAAECggEANAyQh9n83OYti5i+khTaWksbXspWMbB2uQTvx6mqtJPy\nuNoQrJHPiBdCUUf3PLjw2zI8SbzWvCYnBBa6mYdFaKonAb1SRFMVyOfzXR6lTkBF\nDZbxMH5P1skYevlri88bgavwl4A3G4KkU9RwkcF9h1LvJyOarfLwNMdSlR6ZEeVB\ngOCef1gd2f2XX5chPmA8dojWwUd//d247mzlNzIOO3xKgEAAFPWRu5wiCBjXAQ6X\nh8yNN2WJ8ee1Rb8jbKYnLFezKAEwDPDpFrKeF13tS9SfMvQXZbvaB/nDcjGwiRAn\nVjSQA5WglIgqxKTD3B3vjSO+eF/0j3LrsbXp6d2hoQKBgQD0uBZy+FeLPO/xsNSh\n9vLWaghUmN0J5c4lSpWAU3NOM+pFtZbucWcwk4omcyoS6feWjAYXUZbYZABqWRj7\nzEC7z2EouAGYqLiq99J+uyUk6MsMQsfPGGKjjCQAWWv24NM86CTY6CJv8SE0JYAE\ntzDRUWkjqXCR6kKL7T0S65WY5wKBgQC3/BvfQFbr/G6f+If3L9Cy34hFzZQzg4G0\n1zwZICTqeM1FHxNQKd7dbWVK2tD6EdTiEcL4xcVhVNNpr0o860DRhRTKHPUFW/j2\noXr9RkEKWoIpJ+Y+sjEg2c0LS8My7VIPGwRDWCV+s8yZjo7VkHC4aAubZcgGLphR\nMvOOu3wJUQKBgA3hJvzMUwLFqQI3OkgZXnqEtwY9SUQXcZKx4TrPANotnZroiq/p\nZKXfqFU38OnztSQnuuy1pu2M9m0RspYNZpqAT41kqkqDPz4LIjgn2xp1zZZbb0Oy\nqV2HRD900ufEppZswDJBMDrTHUP84H7j+PPWPzVTldvgwnd3NCCPlgN/AoGBAI00\nJkgPXya6lESeP+vMfMXrnPDFuKpYkaGzVuKJswtpL1GPagkqOWuD3Cu5CI4ERXhD\n3XmEf9oVejQwXi+m9hZXpv7/fmVgkxDmGjhsRNqnYCIqByGzLNVjk2TJ/sQFM+d3\n+quc6Rn28F4h9SmfM4O0BsR7NyrXc/tNuXOgHLAhAoGBAIQ+0eYQGGPba6273f1R\n1oeCuvrcez4GnUtVWbbZZbUTkJgyeUvdVEOHi9Llrm4f+b28If37IuMVueoaf6Aw\nuQ20Fdd//llEYXV5REkyHZGWTNo7dmEcCpaaO3ZXzLN4zTPoNZzDTIwhZxDAsfoD\nC66W/81z2yZUcYjPpkzkS/PJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-python-service@exercise-tracker-python.iam.gserviceaccount.com",
+  "client_id": "101541106603494508729",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-python-service%40exercise-tracker-python.iam.gserviceaccount.com"
+}

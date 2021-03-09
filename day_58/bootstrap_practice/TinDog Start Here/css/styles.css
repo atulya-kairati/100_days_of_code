@@ -1,0 +1,177 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    background-color: #ff4c68;
+    padding-bottom: 6%;
+}
+
+#title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: white;
+    padding: 16% 0% 4%;
+}
+
+.container-fluid {
+    padding: 2% 8% 0% 8%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.phone-img {
+    /* position: relative; */
+    height: 600px;
+    transform: rotate(24deg);
+
+    /* overflow: hidden;  */
+    top: 80px;
+    left: 4%;
+    position: absolute;
+ }
+
+.btn{
+    margin-right: 8px;
+}
+
+#features {
+    padding: 8% 16%;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: black;
+}
+
+#features p {
+    color: grey;
+    padding: 0% 6%;
+}
+
+.feature-box {
+    margin: 0% 0%;
+}
+
+/* for targeting  <i> in features <svg> is mentioned 
+    since i gets replaced by svg before rendering */
+.feature-box svg {
+    font-size: 80px;
+    color: #ef8172;
+    margin: 16px 0;
+}
+.feature-box svg:hover {
+    color: #ff4c68;
+}
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+#testimonials h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+#testimonials img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+@media (max-width: 600px){
+    #testimonials img {
+        width: 20%;
+    }
+}
+
+#press {
+    text-align: center;
+    background-color: #ef8172;
+    padding: 4% 10%;  
+}
+
+#press img {
+    width: 80%;
+    margin: 16px;
+}
+
+.carousel-item{
+    padding: 8% 16%;
+
+}
+
+#pricing {
+    margin: 2% 8%;
+    text-align: center;
+}
+
+#pricing .title h2{
+    font-weight: bold;
+    padding-top: 2%;
+}
+#pricing .title p{
+    color: gray;
+}
+
+.card-title{
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.card-text{
+    color: gray;
+}
+
+#cta {
+    background-color: #ff4c68;
+    padding: 8% 16%;
+    text-align: center;
+}
+
+#cta h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 8%;
+}
+
+#footer {
+    text-align: center;
+    padding: 6% 0 1% 0;
+    color: gray;
+}
+
+#footer svg {
+    font-size: 1.5rem;
+    color:#343a40;
+    margin: 0 12px 2% 12px;
+}
+
+
+
+/* -------------------For Mobile Devices-------------------- */
+@media (max-width: 992px){
+    .phone-img {
+        height: 500px;
+        transform: rotate(0deg);
+        position: static;
+        padding-top: 8%;
+    }
+
+    #title{
+        text-align: center;
+    }
+    
+}
+

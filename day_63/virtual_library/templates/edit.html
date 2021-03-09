@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+    <h3><strong>{{ info.get('title') }}</strong> - <em>{{ info.get('author') }}</em></h3>
+    <p>Current Rating: <strong>{{ info.get('rating') }}</strong></p>
+
+    <form action="" method="post">
+        <label>New Rating: </label>
+        <input type="text" name="new-rating">
+        <button type="submit">Change</button>
+    </form>
+</body>
+</html>

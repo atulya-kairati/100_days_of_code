@@ -1,0 +1,57 @@
+{% extends 'bootstrap/base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+  My Shitty Blog
+{% endblock %}
+
+{% block styles %}
+  {{ super() }}
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+ <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+   <!-- Navigation -->
+  {% include "nav-bar.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/register-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Register</h1>
+            <span class="subheading">Join Us.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p>Resister with your email.</p>
+        <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
+        <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
+        <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
+        {{ wtf.quick_form(form, novalidate=True) }}
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+{% endblock %}

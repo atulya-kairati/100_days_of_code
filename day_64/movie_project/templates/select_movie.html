@@ -1,0 +1,23 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block title %}Select a Movie{% endblock %}
+
+{% block content %}
+<div class="content" style="text-align: left;">
+    <h1 class="heading">Select a Movie</h1>
+    <ul>
+        {% for movie in all_movies: %}
+        <li>
+            <a href="{{ url_for('save', movie_id=movie.get('id')) }}">{{ movie.get('original_title') }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "header.html" %}
+
+<body>
+
+    <!-- Navigation -->
+    {% include "nav-bar.html" %}
+
+    <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Contact Me</h1>
+            <span class="subheading">Have questions? I have answers.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div class="container-fluid mx-auto col-6 mt-8">
+        <div class="card">
+            <div class="card-header">
+                Success!
+            </div>
+            <div class="card-body">
+                <p class="card-text">Mail Sent Successfully</p>
+                <a class="btn btn-primary" href="{{ url_for('index_page') }}">Go to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    {% include "footer.html" %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+</body>
+
+</html>
